@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
                     //利用消息机制更新UI
                     //利用发送空消息的方法，发送一个标识，用于区别是哪个子线程请求主线程去更新UI组件
                     //handler.sendEmptyMessage(0x1111);
+                    //handler.obtainMessage(0x1111,"更新消息").sendToTarget();
                     /*携带数据的消息*/
                     Message msg=new Message();//或者Message msg=handle.obtainMessage();
                     msg.what=0x1111;
